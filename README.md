@@ -45,24 +45,24 @@ This project is a Social API that allows users to interact with a social network
 
 ## API Endpoints
 - **User Routes**
-  - `POST /api/users/register` - Register a new user
-  - `POST /api/users/login` - Login a user
-  - `GET /api/users/:id` - Get user profile
-  - `PUT /api/users/:id` - Update user profile
-  - `DELETE /api/users/:id` - Delete user profile
+  - `GET /api/users` - Get all users
+  - `GET /api/users/:id` - Get single user
+  - `POST /api/users` - Create user
+  - `PUT /api/users/:id` - Update user
+  - `DELETE /api/users/:id` - Delete user
 
 - **Post Routes**
-  - `POST /api/posts` - Create a new post
-  - `GET /api/posts` - Get all posts
-  - `GET /api/posts/:id` - Get a single post
-  - `PUT /api/posts/:id` - Update a post
-  - `DELETE /api/posts/:id` - Delete a post
+  - `POST /api/thoughts` - Create a new thought
+  - `GET /api/thoughts` - Get all thoughts
+  - `GET /api/thoughts/:id` - Get a single thought
+  - `PUT /api/thoughts/:id` - Update a thought
+  - `DELETE /api/thoughts/:id` - Delete a thought
 
 - **Interaction Routes**
-  - `POST /api/posts/:id/like` - Like a post
-  - `POST /api/posts/:id/comment` - Comment on a post
-  - `POST /api/users/:id/follow` - Follow a user
-  - `POST /api/users/:id/unfollow` - Unfollow a user
+  - `POST /api/thoughts/:id/reactions` - Comment on a thought
+  - `DELETE /api/thoughts/:id/reactions/:reactionid` - Delete a thought
+  - `POST /api/users/:userId/friends/:friendId` - Become friends
+  - `Delete /api/users/:userId/friends/:friendId` - Delete a friend
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request.
@@ -76,3 +76,11 @@ For any questions or feedback, please contact [koliandrik@gmail.com].
 ## Repository
 
 https://github.com/koliandrik/Social-API
+
+## Demo
+
+https://drive.google.com/file/d/1dGVh1AEJYsXBixNFTWR39UzNmbHypXIs/view?usp=sharing
+
+## Screenshots
+
+![alt text](<images/Screenshot 2024-09-24 151333.png>) ![alt text](<images/Screenshot 2024-09-24 151402.png>) ![alt text](<images/Screenshot 2024-09-24 151412.png>) ![alt text](<images/Screenshot 2024-09-24 151457.png>) ![alt text](<images/Screenshot 2024-09-24 151548.png>) ![alt text](<images/Screenshot 2024-09-24 151600.png>) ![alt text](<images/Screenshot 2024-09-24 151721.png>) ![alt text](<images/Screenshot 2024-09-24 151847.png>) ![alt text](<images/Screenshot 2024-09-24 151919.png>) ![alt text](<images/Screenshot 2024-09-24 152138.png>) ![alt text](<images/Screenshot 2024-09-24 152153.png>)
